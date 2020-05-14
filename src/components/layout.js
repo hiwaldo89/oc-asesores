@@ -1,51 +1,52 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+import { Global, css } from "@emotion/core"
+import "../../node_modules/normalize.css/normalize.css"
+import "../../node_modules/slick-carousel/slick/slick.css"
 import Header from "./header"
-import "./layout.css"
+import Footer from "./footer"
+import "./layout.scss"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+const Layout = ({ children }) => (
+  <>
+    <Global
+      styles={css`
+        * {
+          box-sizing: border-box;
         }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+        body {
+          font-family: "Gotham Book";
+        }
+        button {
+          cursor: pointer;
+          &:focus {
+            outline: none;
+          }
+        }
+        a {
+          text-decoration: none;
+        }
+        .container {
+          padding: 0 15px;
+          margin: auto;
+          @media (min-width: 992px) {
+            width: 920px;
+          }
+          @media (min-width: 1200px) {
+            width: 1140px;
+          }
+        }
+        .row {
+          margin-left: -15px;
+          margin-right: -15px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+      `}
+    />
+    <Header />
+    {children}
+    <Footer />
+  </>
+)
 
 export default Layout
