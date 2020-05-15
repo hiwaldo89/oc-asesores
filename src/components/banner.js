@@ -28,8 +28,12 @@ const Banner = () => {
       >
         <div
           css={css`
-            max-width: 50%;
-            flex: 0 0 50%;
+            max-width: 100%;
+            flex: 0 0 100%;
+            @media (min-width: 768px) {
+              max-width: 50%;
+              flex: 0 0 50%;
+            }
           `}
         >
           <Img fluid={file.childImageSharp.fluid} />
@@ -37,13 +41,17 @@ const Banner = () => {
         <div
           css={css`
             background-color: #522d6d;
-            max-width: 50%;
-            flex: 0 0 50%;
+            max-width: 100%;
+            flex: 0 0 100%;
             text-align: center;
             color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
+            @media (min-width: 768px) {
+              max-width: 50%;
+              flex: 0 0 50%;
+            }
           `}
         >
           <p

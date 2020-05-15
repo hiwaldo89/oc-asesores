@@ -38,21 +38,31 @@ const AboutUs = () => {
         >
           <div
             css={css`
-              max-width: 50%;
-              flex: 0 0 50%;
               padding-left: 15px;
               padding-right: 15px;
+              max-width: 100%;
+              flex: 0 0 100%;
+              margin-bottom: 3rem;
+              @media (min-width: 768px) {
+                max-width: 50%;
+                flex: 0 0 50%;
+                margin-bottom: 0;
+              }
             `}
           >
             <Img fluid={file.childImageSharp.fluid} />
           </div>
           <div
             css={css`
-              max-width: 40%;
-              flex: 0 0 40%;
               padding-left: 15px;
               padding-right: 15px;
               margin-left: auto;
+              max-width: 100%;
+              flex: 0 0 100%;
+              @media (min-width: 768px) {
+                max-width: 40%;
+                flex: 0 0 40%;
+              }
             `}
           >
             <ul

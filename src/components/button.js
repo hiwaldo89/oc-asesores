@@ -11,6 +11,10 @@ const Button = ({ buttonText, onClick }) => (
       border: solid 1px #522d6d;
       padding: 0.5rem 2.8rem;
       border-radius: 25px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.7;
+      }
     `}
     onClick={onClick}
   >

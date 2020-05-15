@@ -79,9 +79,13 @@ const OurServices = () => {
               css={css`
                 padding-left: 15px;
                 padding-right: 15px;
-                max-width: 25%;
-                flex: 0 0 25%;
                 margin-bottom: 3.5rem;
+                max-width: 50%;
+                flex: 0 0 50%;
+                @media (min-width: 768px) {
+                  max-width: 25%;
+                  flex: 0 0 25%;
+                }
               `}
             >
               <img

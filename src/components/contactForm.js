@@ -69,8 +69,12 @@ const ContactForm = () => {
                 css={css`
                   padding-left: 15px;
                   padding-right: 15px;
-                  max-width: 33.3333333%;
-                  flex: 0 0 33.3333333%;
+                  max-width: 100%;
+                  flex: 0 0 100%;
+                  @media (min-width: 768px) {
+                    max-width: 33.3333333%;
+                    flex: 0 0 33.3333333%;
+                  }
                 `}
               >
                 <input

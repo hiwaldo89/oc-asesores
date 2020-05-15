@@ -50,8 +50,12 @@ const ContactSection = () => {
             }
             a {
               display: block;
+              font-size: 80%;
               &:nth-of-type(1) {
                 margin-bottom: 30px;
+              }
+              @media (min-width: 768px) {
+                font-size: 100%;
               }
             }
             span {
@@ -89,9 +93,15 @@ const ContactSection = () => {
             css={css`
               padding-left: 15px;
               padding-right: 15px;
-              max-width: 40%;
-              flex: 0 0 40%;
-              margin-left: 50px;
+              max-width: 100%;
+              flex: 0 0 100%;
+              margin-bottom: 3rem;
+              @media (min-width: 768px) {
+                max-width: 40%;
+                flex: 0 0 40%;
+                margin-left: 50px;
+                margin-bottom: 0;
+              }
             `}
           >
             <div className="contact-block">
@@ -115,10 +125,14 @@ const ContactSection = () => {
             css={css`
               padding-left: 15px;
               padding-right: 15px;
-              max-width: 40%;
-              flex: 0 0 40%;
+              max-width: 100%;
+              flex: 0 0 100%;
               margin-left: auto;
               margin-right: 50px;
+              @media (min-width: 768px) {
+                max-width: 40%;
+                flex: 0 0 40%;
+              }
             `}
           >
             <div className="contact-block">
@@ -129,10 +143,15 @@ const ContactSection = () => {
               <hr />
               <h3>Nos encontramos en:</h3>
               <p>
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-                Ezequiel Montes No. 128 NTE int. 4 <br />
-                Col. Centro <br />
-                Querétaro, Qro.
+                <a
+                  href="https://www.google.com.mx/maps/place/int.+4,+Calle+Ezequiel+Montes+128,+Centro,+76000+Santiago+de+Quer%C3%A9taro,+Qro./@20.5959199,-100.4015353,17z/data=!3m1!4b1!4m5!3m4!1s0x85d35ad6b93add63:0xa411d0fb31ec7fc!8m2!3d20.5959199!4d-100.3993466"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+                  Ezequiel Montes No. 128 NTE int. 4 <br />
+                  Col. Centro <br />
+                  Querétaro, Qro.
+                </a>
               </p>
             </div>
           </div>
