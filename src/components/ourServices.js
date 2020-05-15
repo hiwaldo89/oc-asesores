@@ -7,10 +7,10 @@ import icon4 from "../images/estados-financieros.svg"
 import icon5 from "../images/consultoria-fiscal.svg"
 import icon6 from "../images/consultoria-administrativa.svg"
 import icon7 from "../images/consultoria-contable.svg"
-import icon8 from "../images/consultoria-contable.svg"
-import icon9 from "../images/consultoria-contable.svg"
-import icon10 from "../images/consultoria-contable.svg"
-import icon11 from "../images/consultoria-contable.svg"
+import icon8 from "../images/dictamen-estados-financieros.svg"
+import icon9 from "../images/dictamen-imss.svg"
+import icon10 from "../images/preparacion-estados-financieros.svg"
+import icon11 from "../images/preparacion-situacion-fiscal.svg"
 
 const OurServices = () => {
   const services = [

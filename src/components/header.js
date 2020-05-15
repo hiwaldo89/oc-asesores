@@ -9,7 +9,7 @@ const Header = () => (
     <div
       css={css`
         background-color: #fff;
-        padding: 1.5rem 0;
+        padding: 1rem 0;
       `}
     >
       <div
@@ -24,7 +24,7 @@ const Header = () => (
           alt="oc asesores"
           css={css`
             width: 50%;
-            max-width: 150px;
+            max-width: 120px;
           `}
         />
         <nav

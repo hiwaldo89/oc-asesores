@@ -26,8 +26,13 @@ const useSlides = () => {
     },
     "slide-2": {
       text1:
-        "Somos un despacho fiscal contable, te asesoramos y trabajamos para que mantengas tus finanzas sanas.",
+        "Cada situación es diferente, nuestros asesores personalizan el servicio que tu necesitas.",
       text2: "¡Déjalo en nuestras manos!!",
+    },
+    "slide-3": {
+      text1:
+        "Cuenta con el apoyo de expertos para tomar las mejores decisiones financieras.",
+      text2: "¡Déjalo en nuestras manos!",
     },
   }
   return data.allFile.edges.map(slide => ({

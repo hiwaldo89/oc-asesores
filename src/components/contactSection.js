@@ -91,6 +91,7 @@ const ContactSection = () => {
               padding-right: 15px;
               max-width: 40%;
               flex: 0 0 40%;
+              margin-left: 50px;
             `}
           >
             <div className="contact-block">
@@ -117,6 +118,7 @@ const ContactSection = () => {
               max-width: 40%;
               flex: 0 0 40%;
               margin-left: auto;
+              margin-right: 50px;
             `}
           >
             <div className="contact-block">

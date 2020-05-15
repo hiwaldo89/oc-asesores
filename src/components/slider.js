@@ -51,6 +51,7 @@ const HomeSlider = () => {
     autoplay: true,
     pauseOnHover: false,
     pauseOnFocus: false,
+    autoplaySpeed: 5000,
   }
 
   return (
