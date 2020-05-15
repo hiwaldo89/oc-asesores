@@ -84,6 +84,8 @@ const ContactSection = () => {
             line-height: 1.8;
             margin-bottom: 3.5rem;
           `}
+          data-sal="slide-up"
+          data-sal-duration="500"
         >
           Contáctanos <br />
           ¡Será un placer conocerte y resolver tus dudas!
@@ -103,6 +105,8 @@ const ContactSection = () => {
                 margin-bottom: 0;
               }
             `}
+            data-sal="slide-up"
+            data-sal-duration="500"
           >
             <div className="contact-block">
               <Img
@@ -134,6 +138,8 @@ const ContactSection = () => {
                 flex: 0 0 40%;
               }
             `}
+            data-sal="slide-up"
+            data-sal-duration="500"
           >
             <div className="contact-block">
               <Img

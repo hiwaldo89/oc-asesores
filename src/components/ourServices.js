@@ -69,6 +69,8 @@ const OurServices = () => {
             text-align: center;
             margin-bottom: 5rem;
           `}
+          data-sal="slide-up"
+          data-sal-duration="500"
         >
           Nuestros Servicios
         </h2>
@@ -87,6 +89,8 @@ const OurServices = () => {
                   flex: 0 0 25%;
                 }
               `}
+              data-sal="slide-up"
+              data-sal-duration="500"
             >
               <img
                 src={service.icon}

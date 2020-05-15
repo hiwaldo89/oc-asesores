@@ -35,6 +35,8 @@ const Banner = () => {
               flex: 0 0 50%;
             }
           `}
+          data-sal="slide-right"
+          data-sal-duration="500"
         >
           <Img fluid={file.childImageSharp.fluid} />
         </div>
@@ -53,6 +55,8 @@ const Banner = () => {
               flex: 0 0 50%;
             }
           `}
+          data-sal="slide-left"
+          data-sal-duration="500"
         >
           <p
             css={css`

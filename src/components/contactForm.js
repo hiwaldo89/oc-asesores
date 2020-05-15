@@ -43,6 +43,8 @@ const ContactForm = () => {
           background-color: #f2f2f2;
           padding: 4.5rem 0;
         `}
+        data-sal="slide-up"
+        data-sal-duration="500"
       >
         <div className="container">
           <h2

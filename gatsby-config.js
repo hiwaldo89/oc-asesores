@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -49,6 +49,8 @@ const AboutUs = () => {
                 margin-bottom: 0;
               }
             `}
+            data-sal="slide-right"
+            data-sal-duration="500"
           >
             <Img fluid={file.childImageSharp.fluid} />
           </div>
@@ -64,6 +66,8 @@ const AboutUs = () => {
                 flex: 0 0 40%;
               }
             `}
+            data-sal="slide-up"
+            data-sal-duration="500"
           >
             <ul
               css={css`
