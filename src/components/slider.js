@@ -67,7 +67,6 @@ const HomeSlider = () => {
           css={css`
             position: relative;
             color: #fff;
-            padding: 80px 0;
             &:after {
               content: "";
               display: block;
@@ -89,6 +88,7 @@ const HomeSlider = () => {
           <div
             css={css`
               height: 80vh;
+              min-height: 400px;
               display: flex;
               align-items: center;
               justify-content: center;
