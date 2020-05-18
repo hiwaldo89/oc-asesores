@@ -9,7 +9,7 @@ import { faChevronRight, faChevronLeft } from "@fortawesome/pro-light-svg-icons"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 const HomeSlider = () => {
-  const slides = useSlides()
+  const slides = useSlides().reverse()
 
   const SlickButtonFix = ({ currentSlide, slideCount, children, ...props }) => (
     <button
@@ -67,6 +67,7 @@ const HomeSlider = () => {
           css={css`
             position: relative;
             color: #fff;
+            padding: 80px 0;
             &:after {
               content: "";
               display: block;
@@ -124,6 +125,9 @@ const HomeSlider = () => {
                 }
                 p {
                   margin-bottom: 2rem;
+                  &:nth-of-type(2) {
+                    margin-bottom: 4rem;
+                  }
                 }
               `}
             >

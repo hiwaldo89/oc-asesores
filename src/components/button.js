@@ -12,6 +12,7 @@ const Button = ({ buttonText, onClick, disabled }) => (
       padding: 0.5rem 2.8rem;
       border-radius: 25px;
       transition: all 0.3s ease-in-out;
+      display: inline-block;
       &:hover,
       &:disabled {
         opacity: 0.7;
