@@ -157,6 +157,7 @@ class ContactForm extends React.Component {
                     `}
                     value={this.state.formFields[name].value}
                     onChange={this.handleInputChange}
+                    required
                   />
                 </div>
               ))}
